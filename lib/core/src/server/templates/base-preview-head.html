@@ -119,7 +119,7 @@
     window.fetch('/runtime-error', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ message, source, line, column, error, origin: 'preview' }),
+      body: JSON.stringify({ message: message, source: source, line: line, column: column, error: error, origin: 'preview' }),
     });
   };
 </script>
